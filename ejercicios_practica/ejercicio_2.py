@@ -46,4 +46,17 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.plot(x,y1,color = "b", marker = ".", label = "y1 = x**2")
+    ax.plot(x,y2,color = "r", marker = "+", label = "y2 = x**3")
+
+    ax.set_facecolor("whitesmoke")
+    ax.set_title("Gráfico ejercicio 2")
+    ax.set_ylabel("Eje Y")
+    ax.set_xlabel("Eje X")
+    ax.legend()
+    plt.show()
+
     print("terminamos")

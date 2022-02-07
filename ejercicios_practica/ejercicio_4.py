@@ -54,4 +54,40 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2,2,1)
+    ax2 = fig.add_subplot(2,2,2)
+    ax3 = fig.add_subplot(2,2,3)
+    ax4 = fig.add_subplot(2,2,4)
+
+    ax1.plot(x,y1,color = "b", marker = ".", label = "y1 = x^2 (X al cuadrado)")
+    ax2.plot(x,y2,color = "r", marker = "+", label = "y2 = x^3 (X al cubo)")
+    ax3.plot(x,y3,color = "r", marker = ",", label = "y3 = x^4 (X a la cuarta)")
+    ax4.plot(x,y4,color = "r", marker = "o", label = "y4 = raiz_cuadrada(X)")
+
+    ax1.set_facecolor("whitesmoke")
+    ax1.set_title("y1 = x^2 (X al cuadrado)")
+    #ax1.set_ylabel("Eje Y")
+    #ax1.set_xlabel("Eje X")
+    ax1.legend()
+
+    ax2.set_facecolor("whitesmoke")
+    ax2.set_title("y2 = x^3 (X al cubo)")
+    #ax2.set_ylabel("Eje Y")
+    #ax2.set_xlabel("Eje X")
+    ax2.legend()
+
+    ax3.set_facecolor("whitesmoke")
+    ax3.set_title("y3 = x^4 (X a la cuarta)")
+    #ax3.set_ylabel("Eje Y")
+    #ax3.set_xlabel("Eje X")
+    ax3.legend()
+
+    ax4.set_facecolor("whitesmoke")
+    ax4.set_title("y4 = raiz_cuadrada(X)")
+    #ax4.set_ylabel("Eje Y")
+    #ax4.set_xlabel("Eje X")
+    ax4.legend()
+    plt.show()
+
     print("terminamos")
